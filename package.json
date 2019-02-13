@@ -1,0 +1,22 @@
+{
+  "name": "employeefinderhw",
+  "version": "1.0.0",
+  "description": "hw",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JTMERCH1/EmployeeFinderHW.git"
+  },
+  "author": "john merchant",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JTMERCH1/EmployeeFinderHW/issues"
+  },
+  "homepage": "https://github.com/JTMERCH1/EmployeeFinderHW#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
