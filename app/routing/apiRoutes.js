@@ -1,4 +1,4 @@
-let employees.js = require('../data/employees.js');
+let employees = require('../data/employees');
 
 module.exports = function (app) {
 
@@ -7,6 +7,13 @@ module.exports = function (app) {
     });
 
     app.post('/api/employees', function (req, res) {
-        res.json(employees);
+        const newEmployee = {
+            name:'',
+            photo:'',
+        };
+
+        const user = req.body;
+        const scores = user.scores
+        console.log(user)
     });
 }
