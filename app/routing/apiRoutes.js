@@ -1,19 +1,13 @@
-let employees = require('../data/employees');
+let employees = require("../data/employees.js");
 
-module.exports = function (app) {
+module.exports = function(app) {
+  app.get("/api/employees", function(req, res) {
+    res.json(employees);
+  });
 
-    app.get('/api/employees', function (req, res) {
-        res.json(employees);
-    });
+  app.post("/api/employees", function(req, res) {
+    res.json(employees);
 
-    app.post('/api/employees', function (req, res) {
-        const newEmployee = {
-            name:'',
-            photo:'',
-        };
-
-        const user = req.body;
-        const scores = user.scores
-        console.log(user)
-    });
-}
+    res.end();
+  });
+};
